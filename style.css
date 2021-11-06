@@ -1,7 +1,11 @@
+/* ========== Global ========== */
+
+/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 
   font-family: "Poppins", sans-serif;
 
@@ -14,6 +18,9 @@ body {
   height: 100vh;
 }
 
+/* ========== Menu ========== */
+
+/* LOGO */
 header {
   width: 100%;
   height: 72px;
@@ -25,6 +32,7 @@ header {
   align-items: center;
 }
 
+/* MENU - NAV */
 h1 {
   margin-left: 2rem;
   color: #ffd000;
@@ -32,7 +40,6 @@ h1 {
 }
 
 h1:hover {
-  /* transform: translateY(-5px); */
   font-size: 2.5rem;
   transition: 0.5s;
 }
@@ -59,21 +66,59 @@ nav a:hover {
   color: #a3a3a3;
 }
 
+/* MEDIA MENU */
 @media (max-width: 700px) {
-  h1 {
-    display: none;
-  }
-
   header {
     height: auto;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  h1 {
+    padding: 15px 0;
   }
 
   nav {
-    flex-direction: column;
+    width: 100%;
+    /* flex-direction: column; */
     gap: 0;
   }
 
   nav a {
     padding: 1rem 0;
   }
+}
+
+/* ========== Main ========== */
+
+main {
+  width: 100vw;
+  height: auto;
+  padding: 3rem;
+
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  gap: 2rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.card img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+
+  border-radius: 50%;
+}
+
+.card:hover {
+  color: #ffd000;
 }
