@@ -132,13 +132,16 @@ main {
 /* ========== Footer ========== */
 
 footer {
-  height: 3rem;
+  height: auto;
   background-color: #a3a3a3;
   text-align: center;
   color: #fff;
 }
 
+footer p {
+  padding: 0.5rem;
+}
+
 footer a {
   color: #ffd000;
-  line-height: 3rem;
 }
